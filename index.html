@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #121212;
+            color: #fff;
+            font-size: 1.3rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            margin: 10px;
+        }
+        #box{
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            flex-direction: column;
+            width:50vw;
+            border: 2px solid white;
+            gap: 20px;
+
+        }
+        #submit{
+            padding: 10px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+        #guess{
+            padding: 20px;
+        }
+        .button{
+            padding: 10px;
+            border-radius: 10px;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h1>Guess the Number</h1>
+        <form action="">
+            <label for="guess"></label>
+            <!-- <input type="number" name="guess" id="guess"> -->
+            <input type="text" name="guess" id="guess" placeholder="Enter a Number">
+            <input type="submit" value="submit" id="submit">
+
+        </form>
+        <div class="prevGuesses">Prev Guesses : </div>
+        <div class="guessesRem">Guesses Remaining : 10</div>
+        <div class="showMsg"></div>
+        <button class="button" id="start">Start</button>
+        <button class="button" id="newGame" disabled="true">New Game</button>
+    </div>
+    
+</body>
+<script src="./script4.js" ></script>
+</html>
